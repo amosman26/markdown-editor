@@ -32,34 +32,32 @@ This project is a simple Markdown editor that provides a live preview of the ren
    git clone https://github.com/yourusername/markdown-editor.git
    cd markdown-editor
    ```
-
 2. **Install dependencies:**
 
    ```bash
    npm install
    ```
-
 3. **Run the server:**
 
    ```bash
    npm run dev
    ```
-
 4. Set up PostgreSQL:
 
-	Create a database called markdown_editor.
+   Create a database called markdown_editor.
 
-	Create the `documents` table:
+   Create the `documents` table:
 
-	```sql
-	CREATE TABLE documents (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(255),
-    content TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   ```sql
+   CREATE TABLE documents (
+   id SERIAL PRIMARY KEY,
+   title VARCHAR(255),
+   content TEXT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   ```
+
 );
-	```
-	
+
 5. Start the backend server:
 
    ```bash
@@ -71,7 +69,6 @@ This project is a simple Markdown editor that provides a live preview of the ren
    ```bash
    npm run dev
    ```
-
 7. Open your browser:
 
 Visit `http://localhost:3000` to use the Markdown Editor.
